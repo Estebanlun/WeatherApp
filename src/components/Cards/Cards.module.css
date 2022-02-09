@@ -7,3 +7,11 @@
   gap: 2rem;
   position:relative;
 }
+
+
+@media screen and (min-width: 500px) {
+  .cardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

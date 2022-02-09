@@ -9,7 +9,6 @@
   flex-direction: column;
   padding: 1rem;
   position: relative;
-  /* top: 8rem; */
   border: none;
   box-shadow: 2px 2px 15px 5px rgb(174, 173, 177);
 }
@@ -58,3 +57,9 @@
   right: 1rem;
   color: #fff;
 }
+
+@media screen and (min-width: 500px) {
+    .cardContainer {
+        width: 20rem;
+    }
+  }
