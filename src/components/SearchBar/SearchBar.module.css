@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  background-color: #000;
+  padding: 2rem;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.spanContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.spanOne {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: -.3rem;
+}
+
+.spanTwo {
+  color: rgb(85, 82, 82);
+  font-size: 1rem;
+  width: 100%;
+  margin-left: 4rem;
+}
+
+.inputButton {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.7rem;
+}
+
+.input {
+  border-radius: 5%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 2px;
+  background-color: rgb(75, 78, 88);
+  box-shadow: 0px 0px 5px 2px rgb(174, 173, 177);
+  color: #fff;
+}
+
+.button {
+  border-radius: 20%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 5px;
+  background-color: rgb(75, 78, 88);
+  box-shadow: 0px 0px 5px 2px rgb(174, 173, 177);
+  color: #fff;
+}

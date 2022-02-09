@@ -1,0 +1,60 @@
+.cardContainer {
+  background-color: rgb(75, 78, 88);
+  border-radius: 20px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  position: relative;
+  /* top: 8rem; */
+  border: none;
+  box-shadow: 2px 2px 15px 5px rgb(174, 173, 177);
+}
+
+.cardButtonAndCityName {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  flex-direction: row-reverse;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  align-content: space-between;
+}
+
+.cardButton {
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  padding: 0.2rem 0.4rem 0.2rem 0.3rem;
+  border: none;
+  font-size: 8px;
+  font-weight: 900;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -0.1rem;
+}
+
+.cardCityName {
+  font-size: large;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cardImgAndTemp {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2.5rem;
+  position: relative;
+  right: 1rem;
+  color: #fff;
+}
