@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import styles from "./App.module.css";
 import Cards from "./components/Cards/Cards.jsx";
@@ -9,14 +10,15 @@ function App() {
   const [cities, setCities] = useState([]);
 
   function onClose(id) {
-    setCities(oldCities => oldCities.filter(c => c.id !== id));
+    setCities((oldCities) => oldCities.filter((c) => c.id !== id));
   }
 
   function onSearch(ciudad) {
-    fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`
+    axios(
+      `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`,
+      // { headers: { "Access-Control-Allow-Origin": "*" } }
     )
-      .then((r) => r.json())
+      .then((recurso) => recurso.json())
       .then((recurso) => {
         if (recurso.main !== undefined) {
           const ciudad = {
@@ -33,7 +35,6 @@ function App() {
             longitud: recurso.coord.lon,
           };
           setCities((oldCities) => [...oldCities, ciudad]);
-          
         } else {
           alert("Ciudad no encontrada");
         }
